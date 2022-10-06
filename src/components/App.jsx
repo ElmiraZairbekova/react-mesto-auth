@@ -38,7 +38,7 @@ function App() {
   const [cards, setCards] = useState([]);
 
   const [isLogIn, setIsLogIn] =
-    useState(false); /* [isLoggedIn, setIsLoggedIn] */
+    useState(false);
   const [emailName, setEmailName] = useState(null);
   const [popupTitle, setPopupTitle] = useState("");
   const [infoTooltip, setInfoTooltip] = useState(false);
@@ -62,7 +62,7 @@ function App() {
       });
   }, []);
 
-  function handleLogin /* onLogin */(email, password) {
+  function handleLogin (email, password) {
     auth
       .loginUser(email, password)
       .then((res) => {
@@ -77,7 +77,7 @@ function App() {
       });
   }
 
-  function handleRegister /* onRegister */(email, password) {
+  function handleRegister (email, password) {
     auth
       .registerUser(email, password)
       .then(() => {
@@ -90,7 +90,7 @@ function App() {
       .finally(handleInfoTooltip);
   }
 
-  function logOut /* onSignOut */() {
+  function logOut () {
     setIsLogIn(false);
     setEmailName(null);
     navigate("/sign-in");
