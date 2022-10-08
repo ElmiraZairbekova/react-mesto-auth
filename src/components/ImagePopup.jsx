@@ -4,7 +4,7 @@ import React from "react";
 function ImagePopup(props) {
   return (
     <div
-      className={`popup popup_type_view" ${props.isOpen ? 'popup_active' : ''}`} onClick={props.onCloseClick}>
+      className={`popup popup_type_view" ${props.isOpen ? 'popup_active' : ''}`} /* onClick={props.onCloseClick} */>
       <div className="popup__content">
         <img
           className="popup__image"
@@ -19,6 +19,7 @@ function ImagePopup(props) {
           onClick={props.onClose}
         />
       </div>
+      <div className="popup__overlay" onClick={props.onClose}/>
     </div>
   );
 }

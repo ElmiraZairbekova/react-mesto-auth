@@ -19,7 +19,7 @@ function EditAvatarPopup(props) {
   return (
     <PopupWithForm
       isOpen={props.isOpen}
-      onCloseClick={props.onCloseClick}
+      // onCloseClick={props.onCloseClick}
       onClose={props.onClose}
       name={"avatar"}
       form={"updateAvatar"}

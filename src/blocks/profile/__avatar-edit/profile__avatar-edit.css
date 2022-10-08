@@ -19,8 +19,8 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1279px) {
   .profile__avatar-edit {
-    margin: 0 0 27px 0;
+    margin: 0 auto;
   }
 }
